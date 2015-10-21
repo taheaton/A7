@@ -26,7 +26,14 @@
 
 function sum(a, b) {
     return a + b;
-};
+  };
+  var firstAnswer = sum;
+
+var answer1 = document.querySelector('#answer1');
+    // Create a node from our above answer ready for the DOM
+  var textNode = document.createTextNode(firstAnswer);
+    // Append newly created node to our answer element
+  answer1.appendChild(textNode);
 
 
 // Q2
@@ -37,6 +44,12 @@ function avg(a,b,c) {
   return (a+b+c)%3;
 };
 
+var answer2 = document.querySelector('#answer2');
+    // Create a node from our above answer ready for the DOM
+  var textNode = document.createTextNode(avg);
+    // Append newly created node to our answer element
+  answer2.appendChild(textNode);
+
 
 // Q3
 // Write a function called `getLength` that takes one
@@ -45,9 +58,11 @@ function avg(a,b,c) {
 function getLength(a) {
 return a.length;
 };
-
-
-
+var answer3 = document.querySelector('#answer3');
+    // Create a node from our above answer ready for the DOM
+  var textNode = document.createTextNode(getLength);
+    // Append newly created node to our answer element
+  answer3.appendChild(textNode);
 // Q4
 // Write a function called `greaterThan` that takes
 // two parameters and returns `true` if the second
@@ -56,10 +71,15 @@ return a.length;
 
 function greaterThan(a, b) {
    if(b > a) return true;
- 
-   else return false;
+   else 
+    return false;
 };
 
+var answer4 = document.querySelector('#answer4');
+    // Create a node from our above answer ready for the DOM
+  var textNode = document.createTextNode(greaterThan);
+    // Append newly created node to our answer element
+  answer4.appendChild(textNode);
 
 // Q5
 // Write a function called `greet` that takes a
@@ -67,10 +87,14 @@ function greaterThan(a, b) {
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
 
-function greet(a) {
-return "Hello, " + a;
+function greet(x) {
+return "Hello, " + x;
 };
-
+var answer5 = document.querySelector('#answer5');
+    // Create a node from our above answer ready for the DOM
+  var textNode = document.createTextNode(greet);
+    // Append newly created node to our answer element
+  answer5.appendChild(textNode);
 
 // Q6
 // Write a function called `madlib` that takes
@@ -85,8 +109,11 @@ return "Hello, " + a;
 function madlib(a,b,c,d) {
   return "I will be " + a + " when " + b + " comes to " + c + " the " + d;
 };
-
-
+var answer6 = document.querySelector('#answer6');
+    // Create a node from our above answer ready for the DOM
+  var textNode = document.createTextNode(madlib);
+    // Append newly created node to our answer element
+  answer6.appendChild(textNode);
 
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////

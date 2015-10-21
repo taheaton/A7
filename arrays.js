@@ -19,6 +19,17 @@ var instructors = [
 // ---------------------------
 // 1. Find largest number
 // ---------------------------
+function largest (a,b) {
+  
+  var numbers = [1,12,4,18,9,7,11,3,101,5,6];
+  var inOrder = numbers.sort(function(a, b){
+  return a-b;
+});
+  var objects = numbers.length;
+  var last = inOrder[objects-1];
+};
+
+
 var numbers = [1,12,4,18,9,7,11,3,101,5,6];
 undefined
 var numbersInOrder = numbers.sort(function(a, b) {
@@ -52,8 +63,16 @@ strings [0]
 // ---------------------------
 // 3. Find even numbers
 // ---------------------------
+var numbers = [1,12,4,18,9,7,11,3,101,5,6];
 
+[1, 101, 11, 12, 18, 3, 4, 5, 6, 7, 9]
 
+function even(a){
+  return a.filter(function(val){return val%2===0})
+}
+
+even(arr);
+[4, 8, 14, 76] - not correct
 
 // ---------------------------
 // 4. Find odd numbers
